@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+
+    <title>Media IMC</title>
+</head>
+
+<body>
+
+    <div class="container" style="text-align: center; height: 100vh;">
+
+        <img src="https://i.pinimg.com/originals/9b/f1/d3/9bf1d3d713bad98b5c1880f5942db8fc.png" alt="logo"
+            style="width: 700px; height: 300px;">
+        <form id="imc_form">
+            <div class="form-group">
+                <label>Peso</label>
+                <input name="peso" type="number" class="form-control" aria-describedby="emailHelp">
+                <small class="form-text text-muted">Por favor informe seu peso!</small>
+            </div>
+            <div class="form-group">
+                <label>Altura em CM</label>
+                <input name="altura" type="email" class="form-control" aria-describedby="emailHelp">
+                <small class="form-text text-muted">Por favor informe sua altura em centimetros!</small>
+            </div>
+
+            <a onclick="calcIMC()" class="btn btn-primary">Submit</a>
+        </form>
+
+        <table class="table" style="margin-top: 20px;">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">IMC</th>
+                    <th scope="col">Resultado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Menos que 18,5</th>
+                    <td>Abaixo do peso</td>
+                </tr>
+                <tr>
+                    <th scope="row">Entre que 18,5 e 24,9</th>
+                    <td>Peso normal</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
